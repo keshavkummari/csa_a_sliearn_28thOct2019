@@ -1,0 +1,24 @@
+
+Company Name : Cloud Binary IT Services 
+
+Owner : CKK 
+
+User : What Type of User i.e. 
+
+    1. Root User : https://aws.amazon.com 
+        
+        Username : keshav.kummari@gmail.com 
+        PassWord : *********
+
+Solutions Architect : Jay 
+
+    2. IAM User  : Jay (Permissions / Policies )
+
+    Company Custom AWS Cloud URL : https://cloudbinary.signin.aws.amazon.com/console
+
+        URL : https://cloudbinary.signin.aws.amazon.com/console
+        Account ID / Alias Name : 12992384477 or cloudbinary
+        UserName   : Jay
+        PassWord   : ******
+    
+    3. IAM User   : Balu 

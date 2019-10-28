@@ -1,0 +1,19 @@
+
+1. Browsers      : Chrome, Mozilla 
+
+2. Text Editors  : Notepad++ 
+
+3. IDE Tools     : Visual Studio Code
+https://code.visualstudio.com/download
+
+Windows, MacOS, & Unix/Linux :
+4. git-bash      : To Connect Remote Linux/Unix 
+                 : To Execute Unix/Linux Commands on Windows
+                 : To Utilize VCS / SCM commands 
+https://git-scm.com/
+
+5. aws-cli       : To Connect AWS Cloud 
+https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html
+
+6. Account Creation with AWS : https://aws.amazon/free
+https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc
