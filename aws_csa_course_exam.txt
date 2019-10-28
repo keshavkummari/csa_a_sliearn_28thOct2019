@@ -1,0 +1,15 @@
+Training & certification RoadMap :
+
+https://aws.amazon.com/certification/
+
+About CSA-A :
+
+https://aws.amazon.com/certification/certified-solutions-architect-associate/
+
+Exam Guide :
+
+https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate-Exam_Guide_EN_1.8.pdf
+
+Sample Question Paper :
+
+https://d1.awsstatic.com/training-and-certification/docs/AWS_Certified_Solutions_Architect_Associate_Sample_Questions.pdf

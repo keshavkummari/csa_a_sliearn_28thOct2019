@@ -1,0 +1,17 @@
+Agenda :
+
+1. Trainer Introduction
+2. Learners Introduction
+3. LMS Walkthrough
+4. Course Introduction
+5. Course Curriculumn Topics discussion
+6. AWS Training and Certifications RoadMap
+7. AWS CSA - A level Exam Details Walkthrough
+8. About RunningNotes Share Process
+
+9. AWS Walkthrough
+10. Various ways of logins to AWS Cloud Account 
+11. About IAM Dashboard 
+12. About IAM User & Group Mgmt 
+13. AWS Mgmt Console 
+14. AWS CLI and SDK 
