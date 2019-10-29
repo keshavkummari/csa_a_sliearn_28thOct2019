@@ -1,0 +1,77 @@
+Agenda :
+
+1. What is Cloud Computing
+2. Cloud Vendors
+3. Cloud Models
+4. Cloud Services
+5. AWS Global Resources
+6. AWS Shared Responsibilities [Pending]
+5. AWS Services Walkthrough
+6. AWS Region Based Services 
+7. AWS Global Based Services 
+
+
+What is Cloud Computing?
+
+Delivery of Computing Services:
+
+1. Servers 
+2. Storages
+3. Databases,
+4. Networking, 
+5. Software,
+6. Analytics &
+7. Intelligence over the internet 
+
+Faster Innovation, Flexible Resources and Economies of Scale.
+
+Data Center, Physical Location, SecurityGuards, Power, Water, Agreement, Engineers, Licenses, etc..
+
+Business Man ---> Idea ------> Production  
+
+
+
+Types of Cloud Computing ?
+
+1. Public Cloud : AWS, AZURE, GCP etc... 
+Delivery of Computing Services:
+
+1. Servers 
+2. Storages
+3. Databases,
+4. Networking, 
+5. Software,
+6. Analytics &
+7. Intelligence over the internet 
+
+2. Private Cloud : 
+
+A private cloud refers to cloud computing resources used exclusively by a single business or organisation. 
+A private cloud can be physically located on the company’s on-site datacenter. Some companies also pay third-party service providers to host their private cloud. A private cloud is one in which the services and infrastructure are maintained on a private network.
+
+3. Hybrid Cloud : 
+
+Banking Domain  : 
+
+Name of the bank : CKK
+
+Sensitive Data : On-Premises Data Center 
+
+WebServers or Applications Server on : AWS or AZURE (Public Cloud)
+
+
+https://infrastructure.aws/
+
+https://aws.amazon.com/about-aws/global-infrastructure/
+
+https://aws.amazon.com/blogs/aws/200-amazon-cloudfront-points-of-presence-price-reduction/
+
+Global Services & Region Sevices 
+
+1. IAM
+2. Route53
+
+Regions:
+
+1. VPC 
+2. EC2 
