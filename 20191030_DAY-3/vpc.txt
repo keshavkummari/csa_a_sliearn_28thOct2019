@@ -1,0 +1,11 @@
+https://docs.aws.amazon.com/index.html
+
+VPC :
+
+https://aws.amazon.com/vpc/
+
+https://infrastructure.aws/
+
+http://cidr.xyz/
+
+https://docs.amazonaws.cn/en_us/vpc/latest/userguide/VPC_Scenario1.html

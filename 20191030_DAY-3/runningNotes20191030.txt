@@ -1,0 +1,59 @@
+Agenda : 
+
+1. AWS Shared Responsibilities
+2. EC2 Instance - Windows 
+3. EC2 Instance - Linux 
+4. VPC
+
+
+1. AWS Shared Responsibilities :
+https://aws.amazon.com/compliance/shared-responsibility-model/
+
+2. AWS CLI :
+
+Keshavs-MacBook-Pro:20191030_DAY-3 keshavkummari$ aws route53 
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+Launch a Linux/Windows :
+
+STEP-1 : Selecting of OS/Image
+
+Windows 
+
+Linux Distribution : ubuntu 
+
+STEP-2 : Instance Type 
+
+Motherboard
+CPU 
+RAM
+HARD DISK 
+
+STEP-3 : Selcting the KeyPair (SSH-Keys)
+
+amazonKeys
+
+STEP-4 : Security Groups / Firewall 
+
+sg-0025c050a9543420c
+
+STEP-5 : Network Secltion - VPC (Default VPC)
+
+Linux :
+
+aws ec2 run-instances --image-id "ami-04b9e92b5572fa0d1" --count 1 --instance-type t2.micro --ke
+y-name amazonKeys --security-group-ids "sg-0025c050a9543420c" --subnet-id "subnet-1ea2cb11" --tag-specifications 'ResourceType=instance,Tags=[{Key
+=Name,Value="Linux Machine"}]' 
+
+Windows :
+
+aws ec2 run-instances --image-id "ami-04b9e92b5572fa0d1" --count 1 --instance-type t2.micro --ke
+y-name amazonKeys --security-group-ids "sg-0025c050a9543420c" --subnet-id "subnet-1ea2cb11" --tag-specifications 'ResourceType=instance,Tags=[{Key
+=Name,Value="Linux Machine"}]' 
+
+
