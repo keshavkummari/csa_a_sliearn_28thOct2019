@@ -1,0 +1,44 @@
+
+Agenda :
+
+1. VPC :
+    1. IGW
+    2. RTB - Public RTB & Private RTB
+    3. Subnets - 6 Subnets ; 2 Public Facing Subnets ; 4 Private Facing Subnets 
+    4. NAT Gateway 
+    5. WebApplication using UserData or Bootstrap
+    6. Deploy a RDS i.e. MySQL or Mariadb
+    7. JubmpBox/ Bastion Server 
+
+2. ELB
+3. Launch Configuration Group
+4. Auto Scaling
+5. Bastion Server
+6. RDS
+7. Bootstrap or UserData 
+8. WebApplications 
+
+
+
+http://cidr.xyz/
+
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-recommended-nacl-rules.html
+
+
+
+#!/bin/bash
+
+yum install wget* curl* vim* unzip* -y
+
+yum update -y
+
+yum install http* --skip-broken -y
+
+service httpd start
+
+chkconfig httpd on
+
+echo "<html><body color="olive"><h1>Welcome to AWS World</h1></body></html>" >> /var/www/html/index.html
+

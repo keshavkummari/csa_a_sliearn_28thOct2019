@@ -1,0 +1,50 @@
+
+10.0.0.0: Network address.
+
+10.0.0.1: Reserved by AWS for the VPC router.
+
+10.0.0.2: Reserved by AWS. The IP address of the DNS server is always the base of the VPC network range plus two; however, we also reserve the base of each subnet range plus two. For VPCs with multiple CIDR blocks, the IP address of the DNS server is located in the primary CIDR. For more information, see Amazon DNS Server.
+
+10.0.0.3: Reserved by AWS for future use.
+
+10.0.0.255: Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address.
+
+10.0.1.0/24 = 256-5 : 251 
+
+
+STEP-1 : Make a Subnet as a Public Facing :
+
+Change the column value :
+
+Auto-assign public IPv4 address : No 
+Auto-assign public IPv4 address : YES 
+
+STEP-2 : RTB - PUBLIC RTB 
+
+Add : 2 Public Facing Subnets 
+
+
+[root@ip-10-0-3-214 html]# history
+    1  cd
+    2  yum install http* 
+    3  yum install http* --skip-broken 
+    4  pwd
+    5  service httpd status
+    6  rpmquery httpd
+    7  service httpd start
+    8  service httpd status
+    9  cd /var/www/html
+   10  pwd
+   11  ls -lrt
+   12  echo "<html><body color="olive"><h1>Welcome to AWS World</h1></body></html>" >> index.html 
+   13  ls -lrt
+   14  cat index.html 
+   15  ifconfig
+   16  curl 10.0.3.214
+   17  yum install elinks
+   18  elinks 10.0.3.214
+
+
+   
+
+
