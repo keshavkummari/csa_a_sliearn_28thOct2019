@@ -1,0 +1,118 @@
+
+Agenda :
+
+1. ELB
+2. Launch Configuration
+3. AutoScaling
+4. UserData or Bootstrap
+5. RDS 
+6. EFS 
+7. Use Case :
+    1. Hosting a Website of our own 
+        1. AWS Cloud 
+8. Route53 
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-config.html
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchConfiguration.html
+https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-getting-started.html
+https://www.freenom.com/en/index.html?lang=en
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/introduction.html
+https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-config.html
+
+#---------------------------------------------------------------#
+Godaddy : Domain Registration for 1 year contract 
+
+Domain Name : codewithckk.com
+
+Host a Course i.e. Python Programming 
+
+Code : 
+    1. Client Side Coding : HTML, CSS, JS etc...
+    2. Server Side Coding : Java, Python, NodeJS etc... 
+    3. Database Integration : Oracle, MySQL, etc.... 
+
+Host a Website :
+    1. Godaddy
+    2. Azure
+    3. AWS 
+
+AWS Cloud : 
+    1. VPC 
+        IGW
+        RTB
+        SUBNETS
+        NAT GATEWAY
+        BASTION Server
+    ELB 
+    LC 
+    AutoScaling
+        WebServers 
+        User Data 
+        NACL's 
+        SG 
+    Databases 
+    EFS 
+    2. Route53 : HostedZone Record 
+
+
+#!/bin/bash
+
+# Update the Repo 
+apt update
+yum update -y
+
+# Install Utility Softwares 
+apt install wget* curl* vim* unzip* git* -y
+yum install wget* curl* vim* unzip* git* -y
+
+# Installing of WebServers:
+apt install apache2
+yum install http* --skip-broken -y
+
+# Start the Daemon/Service :
+service apache2 start 
+service httpd start
+
+# Enable the Service at BootLevel 
+chkconfig apache2 on
+chkconfig httpd on
+
+# Download the Code 
+wget https://github.com/keshavkummari/codewithckk/archive/master.zip 
+
+# Unzip the Code 
+unzip master.zip
+
+# Go to the Folder 
+cd codewithckk-master/
+
+# Move the code to one level back 
+mv * ../
+cd ../
+
+# Remove the Folder and Zip file 
+rm -rf codewithckk-master/
+rm -rf master.zip
+
+# Start the Daemon/Service :
+service apache2 start 
+service httpd start
+
+
+
+
+
+
+#!/bin/bash
+yum install wget* curl* vim* unzip* -y
+yum update -y
+yum install http* --skip-broken -y
+mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-af70c14d.efs.us-east-1.amazonaws.com:/ /var/www/html/
+cd /opt/
+wget https://www.free-css.com/assets/files/free-css-templates/download/page231/bizexpress-v1.0.1.zip
+unzip *.zip
+cd Biz*
+mv * /var/www/html/
+service httpd start
+
