@@ -1,0 +1,49 @@
+STEP-1 : Login to Root & Create a User and Assign policies 
+
+Group : admin
+    - Users :
+        - keshav
+
+https://cloudbinary01.signin.aws.amazon.com/console
+
+Route53 :
+    - Web Service of DNS 
+    - Host A WebSite
+    - Traffic Management
+    - Health Monitoring - Primary and Secondary 
+    - Buy domain names 
+
+Client Requirement :
+
+High Availability : 
+    - Regions : - US NorthVirginia & Asia - Mumbari
+
+STEP-1 : Domain Name 
+
+Domain Name : codewithckk.com (godaddy.com) ; 1 year contract 
+
+STEP-2 : Code i.e. index.html 
+
+Code : html 
+
+STEP-3 : Hosting a Website 
+
+AWS - DNS i.e. Route53 :
+
+    - HostedZone (codewithckk.com)
+        - dev.codewithckk.com 
+        - tst.codewithckk.com 
+        - acc.codewithckk.com 
+        - https://codewithckk.com or http://www.codewithckk.com or http://codewithckk.com 
+
+
+ns-943.awsdns-53.net
+ns-1965.awsdns-53.co.uk
+ns-325.awsdns-40.com
+ns-1250.awsdns-28.org
+
+When you create a record, you choose a routing policy, which determines how Amazon Route 53 responds to queries:
+
+Simple routing policy – Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website.
+
+A Record  ---> EC2 instance 

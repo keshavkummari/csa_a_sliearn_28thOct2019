@@ -1,0 +1,8 @@
+Agenda :
+
+1. Route53 
+ - Use Case 
+2. EFS     Pending
+ - Use Case 
+3. Elastic Beanstack  Pending
+
