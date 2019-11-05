@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Update the Repo 
+# apt update
+yum update -y
+
+# Install Utility Softwares 
+#apt install wget* curl* vim* unzip* git* -y
+yum install wget* curl* vim* unzip* git* -y
+
+# Installing of WebServers:
+#apt install apache2
+yum install http* --skip-broken -y
+
+# Start the Daemon/Service :
+#service apache2 start 
+service httpd start
+
+# Enable the Service at BootLevel 
+#chkconfig apache2 on
+chkconfig httpd on
+
+# Navigate to /var/www/html/
+cd /var/www/html/
+
+# Deploy Website code :
+echo "<html><head><title>Mumbari</title></head><body bgcolor="#5FEEDB"><h1>Welcome to Mumbari Server</h1></body></html>" >> /var/www/html/index.html
+
+# Start the Daemon/Service :
+#service apache2 start 
+service httpd start
+

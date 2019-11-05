@@ -1,0 +1,19 @@
+
+1. Launch Linux Machine 
+2. Utility Softwares
+3. Installed WebServer 
+4. Deployed a WebSite 
+
+US :
+# aws ec2 run-instances --image-id "ami-00eb20669e0990cb4" --count 1 --instance-type t2.micro --key-name route53_aws --security-group-ids "sg-0e9253443583c1c41" --subnet-id "subnet-461be478" --tag-specifications 'ResourceType=instance,Tags=[{Key=WebServer,Value=Apache httpd}]' --user-data file://myuserdata_nvirginia.txt 
+
+MUMBAI:
+# aws ec2 run-instances --image-id "ami-02913db388613c3e1" --count 1 --instance-type t2.micro --key-name mumbai_rt53 --security-group-ids "sg-061a9a5eaf103061f" --subnet-id "subnet-96cfb6fe" --tag-specifications 'ResourceType=instance,Tags=[{Key=WebServer,Value=Apache httpd}]' --user-data file://myuserdata_mumbai.txt 
+
+us-east-1a	
+subnet-6510a54b
+aws ec2 run-instances --image-id "ami-00eb20669e0990cb4" --count 1 --instance-type t2.micro --key-name route53_aws --security-group-ids "sg-059a0bcf9939653f6" --subnet-id "subnet-6510a54b" --tag-specifications 'ResourceType=instance,Tags=[{Key=WebServer,Value=Apache httpd}]' --user-data file://myuserdata_nvirginia.txt 
+
+us-east-1b	
+subnet-8387f9c9 
+aws ec2 run-instances --image-id "ami-00eb20669e0990cb4" --count 1 --instance-type t2.micro --key-name route53_aws --security-group-ids "sg-059a0bcf9939653f6" --subnet-id "subnet-8387f9c9" --tag-specifications 'ResourceType=instance,Tags=[{Key=WebServer,Value=Apache httpd}]' --user-data file://efs_userdata.txt 
