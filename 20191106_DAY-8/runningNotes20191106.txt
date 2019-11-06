@@ -1,0 +1,45 @@
+Agenda :
+
+1. Implementing the SSL certs
+    - Use Case 
+2. S3 
+    - Use Case 
+3. CloudFront
+    - Use Case 
+ 
+
+Storage:
+
+1. S3
+2. EFS
+3. FSx  (SAMBA)
+4. S3 Glacier
+5. Storage Gateway
+6. AWS Backup
+
+
+
+
+CloudFront Components:
+
+1. Origin : 
+    - S3 Bucket
+    - WebServer
+    - Media Store
+
+2. Distribution :
+    - Configuration Entity 
+
+3. Edge Location :
+    - Local Infrastructure 
+    - Hosts Caches of your data
+    - 30 Countries
+    - 150 Locations 
+
+4. Regional Edge Caches :
+    - Larger versions of edge locations 
+    - More Capacity 
+    - Server Larger areas 
+
+Caching Process:
+    - 

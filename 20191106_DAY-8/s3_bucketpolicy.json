@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Id": "PolicyId2",
+    "Statement": [
+        {
+            "Sid": "AllowIPmix",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::dev.codewithckk.com/*",
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": "183.83.174.77/32"
+                }
+            }
+        }
+    ]
+}
