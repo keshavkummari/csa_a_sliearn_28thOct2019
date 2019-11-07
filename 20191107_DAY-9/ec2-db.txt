@@ -1,0 +1,38 @@
+[ec2-user@ip-172-31-8-206 ~]$ sudo hostname "db.keshavkummari.com"
+[ec2-user@ip-172-31-8-206 ~]$ /bin/bash
+[ec2-user@db ~]$ 
+[ec2-user@db ~]$ hostname
+db.keshavkummari.com
+[ec2-user@db ~]$ 
+[ec2-user@db ~]$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 0A:A7:89:7D:43:18  
+          inet addr:172.31.8.206  Bcast:172.31.15.255  Mask:255.255.240.0
+          inet6 addr: fe80::8a7:89ff:fe7d:4318/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:9001  Metric:1
+          RX packets:6833 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1561 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:8842631 (8.4 MiB)  TX bytes:122190 (119.3 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:2 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:140 (140.0 b)  TX bytes:140 (140.0 b)
+
+[ec2-user@db ~]$ # 172.31.8.206 db.keshavkummari.com
+[ec2-user@db ~]$ sudo vi /etc/hosts
+[ec2-user@db ~]$ 
+[ec2-user@db ~]$ cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost6 localhost6.localdomain6
+172.31.8.206 db.keshavkummari.com
+[ec2-user@db ~]$ 
+
+
+https://aws.amazon.com/rds/
+https://aws.amazon.com/ebs/features/
+https://aws.amazon.com/products/databases/?nc2=h_ql_prod_db
