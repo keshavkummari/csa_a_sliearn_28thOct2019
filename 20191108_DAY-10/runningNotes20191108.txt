@@ -1,0 +1,8 @@
+Agenda :
+
+1. CloudFormation
+2. AWS IAM
+3. Simplilearn - Lab :
+    2 Projects
+    3 Test
+4. AWS Organizations
