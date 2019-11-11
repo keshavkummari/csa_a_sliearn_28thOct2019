@@ -1,0 +1,21 @@
+Agenda :
+
+1. DMS 
+2. Business Case on Total Cost of Ownership
+    1. Simple Monthly Calculator
+    2. AWS Price Calculator
+    3. AWS TCO Total Cost of Ownership 
+    
+3. VPC Peering
+
+Migration & Transfer
+
+1. AWS Migration Hub
+2. Application Discovery Service
+3. Database Migration Service
+4. Server Migration Service
+5. AWS Transfer for SFTP
+6. Snowball
+7. DataSync
+
+https://aws.amazon.com/events/migration/webinars/whitepapers/
