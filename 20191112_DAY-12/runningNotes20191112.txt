@@ -1,0 +1,23 @@
+Agenda :
+
+1. DMS 
+2. Business Case on Total Cost of Ownership
+    1. Simple Monthly Calculator
+    2. AWS Price Calculator
+    3. AWS TCO Total Cost of Ownership 
+3. Exam Walkthrough
+
+https://aws.amazon.com/tco-calculator/
+
+https://calculator.aws/#/
+
+https://calculator.s3.amazonaws.com/index.html
+
+
+https://aws.amazon.com/certification/certification-prep/
+
+https://aws.amazon.com/certification/certified-solutions-architect-associate/
+
+
+https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate-Exam_Guide_EN_1.8.pdf
+

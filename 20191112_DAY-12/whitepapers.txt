@@ -1,0 +1,21 @@
+AWS Whitepapers
+AWS Services Overview
+
+Architecting for the Cloud – Best Practices
+AWS Storage Options
+AWS Storage Options – S3 & Glacier
+AWS Storage Options – EBS & Instance Store
+AWS Storage Options – RDS, DynamoDB & Database on EC2
+AWS Storage Options – SQS & Redshift
+AWS Storage Options – CloudFront & ElastiCache
+AWS Storage Options – Storage Gateway & Import/Export
+AWS High Availability & Fault Tolerance Architecture
+AWS Encrypting Data at Rest
+AWS Security
+AWS DDoS Resiliency – Best Practices
+AWS Disaster Recovery
+AWS Blue Green Deployment
+AWS Risk and Compliance
+AWS Cloud Migration
+AWS Cloud Migration Services
+AWS Network Connectivity Options

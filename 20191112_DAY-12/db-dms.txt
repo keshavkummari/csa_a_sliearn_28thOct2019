@@ -1,0 +1,96 @@
+#!/bin/bash 
+
+# Update the Repository
+sudo apt update && upgrade && apt list --upgradable -y
+
+# Install Utility Softwares 
+sudo apt install vim curl unzip elinks wget -y 
+
+# Install MySQL Server 
+sudo apt install mysql-server -y
+
+# Configure the Hostname temporarily 
+sudo hostnamectl set-hostname "db.ckk.com"
+
+# Print only Ipaddress 
+sudo hostname -I 
+sudo hostname 
+
+# One time database configuration
+# sudo mysql_secure_installation 
+
+# Restart the Database Deamon or Service 
+sudo systemctl status mysql.service
+sudo systemctl restart mysql.service
+
+
+# Connect the database and validate the DB
+mysql -uroot -predhat@123456 -h 172.31.37.166
+OR
+mysql -u root  -h 172.31.37.166 -p 
+OR 
+mysql -u root -p 
+
+# To Connect Remotely from Windows/MacOS/Linux using 3rd Party tools
+# 3rd Party DB Connect Tool i.e. Workbench 
+
+# Take the Backup of MySQL configuration file 
+sudo cp -pv /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf_20191113
+
+# Uncomment bin-address in below configuration file 
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+# Cross check the configuration
+sudo grep -H -n -i 'bind-address' /etc/mysql/mysql.conf.d/mysqld.cnf
+# /etc/mysql/mysql.conf.d/mysqld.cnf:43:# bind-address		= 127.0.0.1
+
+# Restart the Database Deamon or Service 
+sudo systemctl status mysql.service
+sudo systemctl restart mysql.service
+
+
+# Login to MySQL Database and create a User and assign required permission and allow from Global
+sudo mysql
+mysql> create user 'keshavkummari'@'172.31.37.166' identified by 'redhat@123456';
+
+mysql> grant all on *.* to 'keshavkummari'@'172.31.37.166';
+
+mysql> flush privileges;
+
+mysql> exit;
+
+If you want to login to Database from Your Windows or MacOS :
+
+Note: Go to Your laptop/desktop open a browser and check your public Ipaddress
+https://www.whatismyip.com/
+183.83.174.77
+
+mysql> grant all on *.* to 'keshavkummari'@'183.83.174.77' identified by 'redhat123456';
+
+mysql> grant all on *.* to 'root'@'183.83.174.77' identified by 'redhat123456';
+
+mysql> grant all on *.* to 'root'@'%' identified by 'redhat123456';
+
+mysql> flush privileges;
+
+# Try to login EC2-Database instance with newly created user and validate
+mysql -ukeshavkummari -predhat@123456 -h172.31.37.166
+
+mysql> show databases;
+
+mysql> exit;
+
+# Go to Local Machine i.e. Windows/MacOS and Download 3rd Party tools i.e. MySQLWorkbench etct..
+
+create database pythonaws;
+
+CREATE TABLE `pythonaws`.student(Id INT,NAME VARCHAR(50),Course VARCHAR(50) ,DOJ DATE,Fee INT)
+
+INSERT INTO `pythonaws`.student(id,NAME,Course,DOJ,Fee) VALUES (1,'Ronnie','Python','2017-03-23',40);
+INSERT INTO `pythonaws`.student(id,NAME,Course,DOJ,Fee) VALUES (2,'Sandeep','SQL','2017-03-23',54);
+INSERT INTO `pythonaws`.student(id,NAME,Course,DOJ,Fee) VALUES (3,'Sandy','PLSQL','2017-03-23',43);
+INSERT INTO `pythonaws`.student(id,NAME,Course,DOJ,Fee) VALUES (4,'Enrique','HTML','2017-03-23',23);
+INSERT INTO `pythonaws`.student(id,NAME,Course,DOJ,Fee) VALUES (5,'Abiel','PERL','2017-03-23',45);
+INSERT INTO `pythonaws`.student(id,NAME,Course,DOJ,Fee) VALUES (6,'John','LINUX','2017-03-23',23);
+
+select * from pythonaws.student;

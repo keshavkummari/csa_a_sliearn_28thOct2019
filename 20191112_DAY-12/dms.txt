@@ -1,0 +1,10 @@
+create database devopscloud;
+
+CREATE TABLE `devopscloud`.student(Id INT,NAME VARCHAR(50),Course VARCHAR(50) ,DOJ DATE,Fee INT)
+
+INSERT INTO `devopscloud`.student(id,NAME,Course,DOJ,Fee) VALUES (1,'Vishalkr92','Python','2017-03-23',40);
+INSERT INTO `devopscloud`.student(id,NAME,Course,DOJ,Fee) VALUES (2,'Samasied','SQL','2017-03-23',54);
+INSERT INTO `devopscloud`.student(id,NAME,Course,DOJ,Fee) VALUES (3,'Surjitice','PLSQL','2017-03-23',43);
+INSERT INTO `devopscloud`.student(id,NAME,Course,DOJ,Fee) VALUES (4,'Sushruth1518','HTML','2017-03-23',23);
+INSERT INTO `devopscloud`.student(id,NAME,Course,DOJ,Fee) VALUES (5,'Saji','PERL','2017-03-23',45);
+INSERT INTO `devopscloud`.student(id,NAME,Course,DOJ,Fee) VALUES (6,'Annar_ps','LINUX','2017-03-23',23);
